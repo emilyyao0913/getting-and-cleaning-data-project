@@ -1,186 +1,30 @@
-Code Book
+Getting and Cleaning Data: Course Project
 
-The codebook indicates all the variables and summaries calculated, along with units, and any other relevant information.
+This repository contains my work for the Coursera course "Getting and Cleaning data" final project.
 
-Data source
+The purpose of this project is to demonstrate my ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 
-This dataset is derived from the "Human Activity Recognition Using Smartphones Data Set." The link is as the following: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+I created a script called run_analysis.R which will merge the test and training sets together. 
 
-Identifiers
+The R script, run_analysis.R, does the following:
 
-subject - The ID of the test subject
-activity - The type of activity performed when the corresponding measurements were taken
+Download the dataset 
+Load the activity and feature information
+Loads both the training and test datasets
+Extracts only the measurements on the mean and standard deviation for each measurement.
+Loads the activity and subject data for each dataset, and merges those columns with the dataset
+Merges the two datasets
+Converts the activity and subject columns into factors
+Creates a tidy dataset that consists of the average (mean) value of each variable for each subject and activity pair.
 
-Measurements
 
-tBodyAccMeanX
+The CodeBook.md file talked about the variables and measurements I included in the analysis. 
 
-tBodyAccMeanY
 
-tBodyAccMeanZ
 
-tBodyAccStdX
 
-tBodyAccStdY
 
-tBodyAccStdZ
 
-tGravityAccMeanX
 
-tGravityAccMeanY
 
-tGravityAccMeanZ
 
-tGravityAccStdX
-
-tGravityAccStdY
-
-tGravityAccStdZ
-
-tBodyAccJerkMeanX
-
-tBodyAccJerkMeanY
-
-tBodyAccJerkMeanZ
-
-tBodyAccJerkStdX
-
-tBodyAccJerkStdY
-
-tBodyAccJerkStdZ
-
-tBodyGyroMeanX
-
-tBodyGyroMeanY
-
-tBodyGyroMeanZ
-
-tBodyGyroStdX
-
-tBodyGyroStdY
-
-tBodyGyroStdZ
-
-tBodyGyroJerkMeanX
-
-tBodyGyroJerkMeanY
-
-tBodyGyroJerkMeanZ
-
-tBodyGyroJerkStdX
-
-tBodyGyroJerkStdY
-
-tBodyGyroJerkStdZ
-
-tBodyAccMagMean
-
-tBodyAccMagStd
-
-tGravityAccMagMean
-
-tGravityAccMagStd
-
-tBodyAccJerkMagMean
-
-tBodyAccJerkMagStd
-
-tBodyGyroMagMean
-
-tBodyGyroMagStd
-
-tBodyGyroJerkMagMean
-
-tBodyGyroJerkMagStd
-
-fBodyAccMeanX
-
-fBodyAccMeanY
-
-fBodyAccMeanZ
-
-fBodyAccStdX
-
-fBodyAccStdY
-
-fBodyAccStdZ
-
-fBodyAccMeanFreqX
-
-fBodyAccMeanFreqY
-
-fBodyAccMeanFreqZ
-
-fBodyAccJerkMeanX
-
-fBodyAccJerkMeanY
-
-fBodyAccJerkMeanZ
-
-fBodyAccJerkStdX
-
-fBodyAccJerkStdY
-
-fBodyAccJerkStdZ
-
-fBodyAccJerkMeanFreqX
-
-fBodyAccJerkMeanFreqY
-
-fBodyAccJerkMeanFreqZ
-
-fBodyGyroMeanX
-
-fBodyGyroMeanY
-
-fBodyGyroMeanZ
-
-fBodyGyroStdX
-
-fBodyGyroStdY
-
-fBodyGyroStdZ
-
-fBodyGyroMeanFreqX
-
-fBodyGyroMeanFreqY
-
-fBodyGyroMeanFreqZ
-
-fBodyAccMagMean
-
-fBodyAccMagStd
-
-fBodyAccMagMeanFreq
-
-fBodyBodyAccJerkMagMean
-
-fBodyBodyAccJerkMagStd
-
-fBodyBodyAccJerkMagMeanFreq
-
-fBodyBodyGyroMagMean
-
-fBodyBodyGyroMagStd
-
-fBodyBodyGyroMagMeanFreq
-
-fBodyBodyGyroJerkMagMean
-
-fBodyBodyGyroJerkMagStd
-
-fBodyBodyGyroJerkMagMeanFreq
-
-Activity Labels
-
-WALKING (value 1): subject was walking during the test
-
-WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
-
-WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
-
-SITTING (value 4): subject was sitting during the test
-
-STANDING (value 5): subject was standing during the test
-
-LAYING (value 6): subject was laying down during the test
